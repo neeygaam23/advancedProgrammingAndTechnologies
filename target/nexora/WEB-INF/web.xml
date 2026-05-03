@@ -1,0 +1,33 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>CommunityServlet</servlet-name>
+        <servlet-class>com.projectname.controller.CommunityServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CommunityServlet</servlet-name>
+        <url-pattern>/community</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>com.projectname.controller.CourseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/course</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>com.projectname.controller.PostServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/post</url-pattern>
+    </servlet-mapping>
+
+</web-app>
