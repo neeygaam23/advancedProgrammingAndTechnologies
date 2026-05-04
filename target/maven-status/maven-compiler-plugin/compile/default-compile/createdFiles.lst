@@ -1,0 +1,14 @@
+com\projectname\controller\CommunityServlet.class
+com\projectname\controller\PostServlet.class
+com\projectname\dao\CourseDAO.class
+com\projectname\model\Community.class
+com\projectname\dao\CommunityDAO.class
+com\projectname\filter\AuthenticationFilter.class
+com\projectname\utils\SessionUtils.class
+com\projectname\controller\CourseServlet.class
+com\projectname\controller\LoginServlet.class
+com\projectname\utils\DBConnection.class
+com\projectname\model\User.class
+com\projectname\controller\RegisterServlet.class
+com\projectname\controller\LogoutServlet.class
+com\projectname\dao\UserDAO.class

@@ -1,0 +1,14 @@
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\CommunityServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\CourseServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\LoginServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\LogoutServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\PostServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\controller\RegisterServlet.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\dao\CommunityDAO.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\dao\CourseDAO.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\dao\UserDAO.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\filter\AuthenticationFilter.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\model\Community.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\model\User.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\utils\DBConnection.java
+C:\Users\thebrownguy\Desktop\nex\advancedProgrammingAndTechnologies-main\src\com\projectname\utils\SessionUtils.java
