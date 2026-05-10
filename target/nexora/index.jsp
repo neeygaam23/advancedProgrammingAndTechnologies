@@ -1,1 +1,0 @@
-<a href="user/creator-dashboard.jsp">user</a>
