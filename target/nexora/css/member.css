@@ -2,7 +2,7 @@
    NEXORA — member.css
    All styles for Member Dashboard pages
 
-/* ── ROOT VARIABLES ───────────────────────────────────────── */
+/*  ROOT VARIABLES  */
 :root {
     --p:       #043873;
     --pa:      #4F9CF9;
@@ -23,7 +23,7 @@
     --rl:  16px;
 }
 
-/* ── RESET & BASE ─────────────────────────────────────────── */
+/*  RESET & BASE  */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -43,7 +43,7 @@ input, textarea, select {
     font-size: 14px;
 }
 
-/* ── LAYOUT ───────────────────────────────────────────────── */
+/*  LAYOUT  */
 .dash-layout {
     display: flex;
     height: 100vh;
@@ -62,7 +62,7 @@ input, textarea, select {
     padding: 1.75rem 2rem;
 }
 
-/* ── SIDEBAR ──────────────────────────────────────────────── */
+/*  SIDEBAR  */
 .m-sidebar {
     width: var(--sw);
     background: var(--white);
@@ -219,7 +219,7 @@ input, textarea, select {
 .msb-logout .msb-icon svg { stroke: var(--danger) !important; }
 .msb-logout:hover { background: var(--danger-bg) !important; }
 
-/* ── TOPBAR ───────────────────────────────────────────────── */
+/*  TOPBAR   */
 .dash-topbar {
     height: var(--nh);
     background: var(--white);
@@ -302,7 +302,7 @@ input, textarea, select {
     flex-shrink: 0;
 }
 
-/* ── BUTTONS ──────────────────────────────────────────────── */
+/*  BUTTONS  */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -353,7 +353,7 @@ input, textarea, select {
     border-radius: 7px;
 }
 
-/* ── PANELS / CARDS ───────────────────────────────────────── */
+/*  PANELS / CARDS  */
 .panel {
     background: var(--white);
     border-radius: var(--rl);
@@ -376,7 +376,7 @@ input, textarea, select {
     padding: 1rem 1.4rem;
 }
 
-/* ── BADGES ───────────────────────────────────────────────── */
+/*  BADGES  */
 .badge {
     display: inline-flex;
     align-items: center;
@@ -391,7 +391,7 @@ input, textarea, select {
 .badge-purple { background: #F5F3FF; color: #6D28D9; }
 .badge-gray   { background: #F9FAFB; color: #374151; border: 1px solid var(--border); }
 
-/* ── WELCOME BANNER ───────────────────────────────────────── */
+/*  WELCOME BANNER  */
 .member-welcome-banner {
     background: linear-gradient(135deg, var(--p) 0%, var(--pa) 100%);
     border-radius: var(--rl);
@@ -439,7 +439,7 @@ input, textarea, select {
 .welcome-actions { display: flex; gap: .65rem; }
 .welcome-illustration { font-size: 3.5rem; opacity: .9; }
 
-/* ── STAT CARDS ───────────────────────────────────────────── */
+/*  STAT CARDS  */
 .stat-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -482,14 +482,14 @@ input, textarea, select {
     margin-top: .25rem;
 }
 
-/* ── DASHBOARD GRID ───────────────────────────────────────── */
+/*  DASHBOARD GRID  */
 .dash-grid {
     display: grid;
     grid-template-columns: 1fr 280px;
     gap: 1.25rem;
 }
 
-/* ── COURSE PROGRESS ITEM ─────────────────────────────────── */
+/*  COURSE PROGRESS ITEM  */
 .course-progress-item {
     display: flex;
     align-items: center;
@@ -521,7 +521,7 @@ input, textarea, select {
 .cpi-community { font-size: .7rem; color: var(--muted); margin-bottom: .4rem; }
 .cpi-meta { font-size: .68rem; color: var(--muted); margin-top: .2rem; }
 
-/* ── PROGRESS BAR ─────────────────────────────────────────── */
+/*  PROGRESS BAR  */
 .progress-bar-wrap {
     height: 5px;
     background: var(--border);
@@ -535,7 +535,7 @@ input, textarea, select {
     transition: width .3s ease;
 }
 
-/* ── ACTIVITY FEED ────────────────────────────────────────── */
+/*  ACTIVITY FEED  */
 .activity-item {
     display: flex;
     align-items: center;
@@ -557,7 +557,7 @@ input, textarea, select {
 .activity-text p { font-size: .78rem; color: var(--text); line-height: 1.4; }
 .activity-time { font-size: .68rem; color: var(--muted); margin-top: .15rem; }
 
-/* ── MINI COMMUNITY ───────────────────────────────────────── */
+/*  MINI COMMUNITY  */
 .mini-community-item {
     display: flex;
     align-items: center;
@@ -578,7 +578,7 @@ input, textarea, select {
 .mc-name { font-size: .8rem; font-weight: 600; }
 .mc-meta { font-size: .68rem; color: var(--muted); }
 
-/* ── COMMUNITY CARDS (Browse) ─────────────────────────────── */
+/*  COMMUNITY CARDS (Browse)  */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -644,7 +644,7 @@ input, textarea, select {
     flex-wrap: wrap;
 }
 
-/* ── FILTER TABS ──────────────────────────────────────────── */
+/*  FILTER TABS  */
 .filter-tabs { display: flex; gap: .4rem; flex-wrap: wrap; }
 .filter-tab {
     padding: .38rem .85rem;
@@ -663,7 +663,7 @@ input, textarea, select {
     color: #fff;
 }
 
-/* ── COMMUNITY VIEW ───────────────────────────────────────── */
+/*  COMMUNITY VIEW  */
 .community-tabs {
     display: flex;
     gap: .25rem;
@@ -687,7 +687,7 @@ input, textarea, select {
 .comm-tab-content { display: none; }
 .comm-tab-content.active { display: block; }
 
-/* ── POST CARDS ───────────────────────────────────────────── */
+/*  POST CARDS  */
 .post-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -741,7 +741,7 @@ input, textarea, select {
 .post-action-btn:hover { background: var(--bg); color: var(--text); }
 .post-action-btn.liked { color: #EF4444; }
 
-/* ── COMMENTS ─────────────────────────────────────────────── */
+/*  COMMENTS  */
 .comment-area { border-top: 1px solid var(--border); padding: .85rem 1.25rem; }
 .comment-form {
     display: flex;
@@ -775,7 +775,7 @@ input, textarea, select {
 .comment-author { font-weight: 600; font-size: .75rem; margin-bottom: .2rem; }
 .comment-text { font-size: .78rem; color: var(--muted); line-height: 1.5; }
 
-/* ── CREATE POST MODAL ────────────────────────────────────── */
+/*  CREATE POST MODAL  */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -829,7 +829,7 @@ input, textarea, select {
     color: var(--p);
 }
 
-/* ── FORM ELEMENTS ────────────────────────────────────────── */
+/*  FORM ELEMENTS  */
 .form-group { margin-bottom: 1rem; }
 .form-label {
     display: block;
@@ -861,7 +861,7 @@ input, textarea, select {
     gap: 1rem;
 }
 
-/* ── COURSE LAYOUT ────────────────────────────────────────── */
+/*  COURSE LAYOUT  */
 .course-layout {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -908,7 +908,7 @@ input, textarea, select {
 .curr-lesson.locked { color: #D1D5DB; cursor: not-allowed; }
 .curr-arrow { font-size: .7rem; color: var(--muted); }
 
-/* ── VIDEO PLAYER ─────────────────────────────────────────── */
+/*  VIDEO PLAYER  */
 .video-player {
     background: #0d1117;
     position: relative;
@@ -942,11 +942,11 @@ input, textarea, select {
 }
 .vc-btn:hover { background: #21262d; }
 
-/* ── LESSON TABS ──────────────────────────────────────────── */
+/*  LESSON TABS  */
 .lesson-tab-content { display: none; }
 .lesson-tab-content.active { display: block; }
 
-/* ── PROFILE ──────────────────────────────────────────────── */
+/*  PROFILE  */
 .profile-header-card {
     background: var(--white);
     border-radius: var(--rl);
@@ -1045,7 +1045,7 @@ input, textarea, select {
 .tag span { cursor: pointer; opacity: .6; font-size: .7rem; }
 .tag span:hover { opacity: 1; }
 
-/* ── TOGGLE / SWITCH ──────────────────────────────────────── */
+/*  TOGGLE / SWITCH     */
 .toggle-row {
     display: flex;
     justify-content: space-between;
@@ -1080,7 +1080,7 @@ input, textarea, select {
 .toggle input:checked + .toggle-slider { background: var(--pa); }
 .toggle input:checked + .toggle-slider::before { transform: translateX(18px); }
 
-/* ── PASSWORD STRENGTH ────────────────────────────────────── */
+/*  PASSWORD STRENGTH  */
 .password-strength {
     display: flex;
     gap: .35rem;
@@ -1093,7 +1093,7 @@ input, textarea, select {
     background: var(--border);
 }
 
-/* ── ENROLMENTS ───────────────────────────────────────────── */
+/*  ENROLMENTS  */
 .enrol-tab-content { display: none; }
 .enrol-tab-content.active { display: block; }
 .course-enrol-card {
@@ -1124,7 +1124,7 @@ input, textarea, select {
 }
 .cec-meta { font-size: .72rem; color: var(--muted); }
 
-/* ── TABLE ────────────────────────────────────────────────── */
+/*  TABLE  */
 .table-wrap { overflow-x: auto; }
 .data-table {
     width: 100%;
@@ -1149,7 +1149,7 @@ input, textarea, select {
 .data-table tr:hover td { background: var(--bg); }
 .td-community { display: flex; align-items: center; gap: .65rem; }
 
-/* ── PAGE HEADER ──────────────────────────────────────────── */
+/*  PAGE HEADER  */
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -1164,7 +1164,7 @@ input, textarea, select {
 }
 .page-header p { font-size: .8rem; color: var(--muted); margin-top: .2rem; }
 
-/* ── SCROLLBAR ────────────────────────────────────────────── */
+/*  SCROLLBAR  */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
