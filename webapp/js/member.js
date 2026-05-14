@@ -89,3 +89,79 @@ function joinCommunity(btn) {
         }
     }
 }
+
+/* TOGGLE POST COMMENTS */
+function toggleComments(btn) {
+    const card = btn.closest('.post-card');
+    if (!card) return;
+    const area = card.querySelector('.comment-area');
+    if (!area) return;
+
+    const isHidden = area.style.display === 'none' || area.style.display === '';
+    area.style.display = isHidden ? 'block' : 'none';
+}
+
+/* Create Post Modal */
+function openCreatePostModal(){
+    
+    const modal = document.getElementById('postModal');
+    if(modal) modal.classList.add('open');
+
+}
+function closeCreatePostModal(){
+
+    const modal = document.getElementById('postModal');
+    if(modal) modal.classList.remove('open');
+
+}
+
+document.addEventListener('click', function(e){
+    const modal = document.getElementById('postModal');
+    if(modal && e.target === modal) closeCreatePostModal();
+});
+
+/* Curriculum Modules TOGGLE */
+function toggleModule(header) {
+    const lessons = header.nextElementSibling;
+    if (!lessons) return;
+
+    const isHidden = lessons.style.display === 'none';
+    lessons.style.display = isHidden ? 'block' : 'none';
+    const arrow = header.querySelector('.curr-arrow');
+    if (arrow) arrow.textContent = isHidden ? '▾' : '▸';
+}
+
+/* mark lesson as completed */
+
+function markCompleted(btn) {
+    btn.textContent = 'Completed';
+    btn.style.color = 'var(--success)';
+    btn.disabled = true;
+    btn.style.opacity = '.8';
+}
+
+/* Profile Edit */
+function enableEdit() {
+    document.querySelectorAll('.profile-field').forEach(f => {
+        f.disabled = false;
+        f.style.borderColor = 'var(--pa)';
+    });
+
+    const row = document.getElementById('saveBtnRow');
+    if (row) row.style.display = 'flex';
+}
+
+function cancelEdit() {
+    document.querySelectorAll('.profile-field').forEach(f => {
+        f.disabled = true;
+        f.style.borderColor = '';
+    });
+
+    const row = document.getElementById('saveBtnRow');
+    if (row) row.style.display = 'none';
+}
+
+function saveProfile() {
+    cancelEdit();
+    showToast('Profile saved successfully!', 'success');
+}
