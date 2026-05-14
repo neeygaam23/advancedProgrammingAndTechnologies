@@ -108,6 +108,7 @@
                 <div class="panel">
                     <div class="panel-header">
                         <span class="panel-title">&#128214; Courses In Progress</span>
+                        <a href="${pageContext.request.contextPath}/user/view/my-enrolments.jsp"
                            class="btn btn-ghost btn-sm">View All</a>
                     </div>
                     <div class="panel-body">
@@ -122,6 +123,7 @@
                                 </div>
                                 <div class="cpi-meta">68% complete &middot; 4 lessons left</div>
                             </div>
+                            <a href="${pageContext.request.contextPath}/user/view/course-view.jsp"
                                class="btn btn-primary btn-sm">Continue</a>
                         </div>
 
@@ -135,6 +137,7 @@
                                 </div>
                                 <div class="cpi-meta">35% complete &middot; 9 lessons left</div>
                             </div>
+                            <a href="${pageContext.request.contextPath}/user/view/course-view.jsp"
                                class="btn btn-primary btn-sm">Continue</a>
                         </div>
 
@@ -148,6 +151,7 @@
                                 </div>
                                 <div class="cpi-meta">12% complete &middot; 15 lessons left</div>
                             </div>
+                            <a href="${pageContext.request.contextPath}/user/view/course-view.jsp"
                                class="btn btn-primary btn-sm">Continue</a>
                         </div>
 
@@ -198,6 +202,7 @@
                     <div class="panel">
                         <div class="panel-header">
                             <span class="panel-title">&#127968; My Communities</span>
+                            <a href="${pageContext.request.contextPath}/user/view/browse-communities.jsp"
                                class="btn btn-ghost btn-sm">Browse</a>
                         </div>
                         <div class="panel-body" style="display: flex; flex-direction: column; gap: .85rem;">
@@ -208,6 +213,7 @@
                                     <div class="mc-name">TechHub</div>
                                     <div class="mc-meta">2.4k members &middot; 3 new posts</div>
                                 </div>
+                                <a href="${pageContext.request.contextPath}/user/view/community-view.jsp"
                                    class="btn btn-ghost btn-sm" style="margin-left: auto;">View</a>
                             </div>
 
@@ -217,6 +223,7 @@
                                     <div class="mc-name">DesignPro</div>
                                     <div class="mc-meta">1.1k members &middot; 1 new post</div>
                                 </div>
+                                <a href="${pageContext.request.contextPath}/user/view/community-view.jsp"
                                    class="btn btn-ghost btn-sm" style="margin-left: auto;">View</a>
                             </div>
 
@@ -226,6 +233,7 @@
                                     <div class="mc-name">DataLearn</div>
                                     <div class="mc-meta">890 members &middot; 5 new posts</div>
                                 </div>
+                                <a href="${pageContext.request.contextPath}/user/view/community-view.jsp"
                                    class="btn btn-ghost btn-sm" style="margin-left: auto;">View</a>
                             </div>
 
