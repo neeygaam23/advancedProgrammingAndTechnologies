@@ -165,3 +165,60 @@ function saveProfile() {
     cancelEdit();
     showToast('Profile saved successfully!', 'success');
 }
+
+/* REMOVE WISHLIST ITEM  */
+function removeWishlist(btn) {
+    const card = btn.closest('.course-enrol-card');
+    if (card) {
+        card.style.opacity = '0';
+        card.style.transform = 'scale(.95)';
+        card.style.transition = 'all .25s';
+        setTimeout(() => card.remove(), 250);
+    }
+}
+
+/*  TOAST NOTIFICATION */
+function showToast(message, type) {
+    const existing = document.getElementById('nx-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'nx-toast';
+    toast.style.cssText = `
+        position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999;
+        background: ${type === 'success' ? '#22C55E' : '#EF4444'};
+        color: #fff; padding: .7rem 1.25rem; border-radius: 10px;
+        font-family: 'DM Sans', sans-serif; font-size: .82rem; font-weight: 600;
+        box-shadow: 0 8px 24px rgba(0,0,0,.15);
+        animation: slideInToast .25s ease;
+    `;
+    toast.textContent = message;
+
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes slideInToast {
+            from { opacity: 0; transform: translateY(1rem); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    `;
+    document.head.appendChild(style);
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 3000);
+}
+
+/* POST TAB SWITCHER (general) */
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('post-tab')) {
+        const siblings = e.target.parentElement.querySelectorAll('.post-tab');
+        siblings.forEach(t => t.classList.remove('active'));
+        e.target.classList.add('active');
+    }
+});
+
+/* WISHLIST: check #hash on load */
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.hash === '#wishlist') {
+        const wishlistTab = document.querySelector('[onclick*="wishlist"]');
+        if (wishlistTab) wishlistTab.click();
+    }
+});
